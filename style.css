@@ -1,5 +1,492 @@
-:root {
-    --Athens-Gray: #F0F0F1;
-    --Saffron: #F6BD2A;
-    --Main: #274188;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Paragraph : #C3C3C3;
+    --Balck-basic : #3F3F3F;
+    --Low-Highlighted : #9F9F9F;
+    --disabled : #FFFFFF;
+    --Blue-color : #274188;
+    --Yellow-color: #F6BD2A;
+    --Section-color : #F4F4F4;
+    --Athens-Gray:   #F0F0F1;
+    --Mercury  : #E6E6E6;
+
+}
+button{
+  border: none;
+}
+.highlited-text{
+  color: var(--Blue-color);
+}
+
+.yellow-underline{
+  text-decoration: underline;
+  text-decoration-color: #f6bd25;
+  text-decoration-thickness: 10px;
+}
+
+.black-text{
+  color: #212728eb;
+  font-weight: 500;
+}
+
+.action-btn-active{
+  background: var(--Blue-color) !important;
+  color: var(--disabled);
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  /* margin-top: 45px; */
+  font-weight: 500;
+  cursor: pointer;
+} 
+.action-btn-active:hover{
+  background: var(--Yellow-color)  !important;
+  color: var(--disabled) !important;
+}
+
+.action-btn-disable{
+  background: #e2dede  !important;
+  color: var(--Blue-color);
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  /* margin-top: 45px; */
+  font-weight: 500;
+  cursor: pointer;
+} 
+.action-btn-disable:hover{
+  background: var(--Yellow-color)  !important;
+  color: var(--disabled) !important;
+}
+
+a:hover {
+  color: #fcb302 !important;
+}
+
+.error {
+  color: red;
+}
+/* scroll animation  */
+.js [data-entrance] {
+  visibility: hidden;
+}
+/* scroll animation end  */
+
+@font-face {
+    font-family: 'Manrope';  /* Name of the font */
+    src: url('./asset/fonts/Manrope.ttf') format('truetype');  /* Path and format of the font file */
   }
+  
+  @font-face {
+    font-family: 'Manrope';  /* Name of the font */
+    src: url('./asset/fonts/Manrope.ttf') format('truetype');  /* Path and format of the font file */
+  }
+
+  body {
+    font-family: 'Manrope', sans-serif;  
+  }
+
+h1{
+   font-family: 'Manrope';
+}
+
+/* navbar  */
+.navbar{
+    background-color: var(--Athens-Gray);
+    /* border-bottom: 50px solid var(--Yellow-color); */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.20);
+
+}
+.navbar-nav .nav-item{
+  /* font-weight: bold; */
+padding: 10px;
+}
+.nav-item .nav-link {
+  font-size: 18px;
+}
+/* End navbar  */
+
+/* -----------------Hero section---------------------------------------- */
+.polaris-hero{
+  padding-top: 120px;
+  background-color: var(--Athens-Gray);
+}
+
+.polaris-hero-header h1{
+  width: 45%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+}
+/* --------------End Hero section---------------------- */
+
+
+
+/* ------------Track Your Business Finance --------  */
+.polaris-track{
+  padding: 60px;
+  background-color: var(--disabled);
+}
+.polaris-track .polaris-track-header h1{
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 60px;
+}
+.polaris-track .track-left h2{
+  color: var(--Blue-color);
+  width: 60%;
+}
+.polaris-track .track-right img{
+  float: inline-end;
+  margin-right: 15px;
+}
+/* ------------End Track Your Business Finance --------  */
+
+
+/* ---------process-------- */
+.process {
+  padding: 0.5rem 0px;
+  background-color: var(--Athens-Gray);
+}
+.process h5{
+  color: var(--Blue-color);
+}
+.wide,
+.easy,
+ .fast
+ {
+  padding: 30px 0px;
+  background-color: var(--bg-cream);
+  border-radius: 15px;
+
+}
+
+.wide h5{
+  padding-top: 20px;
+  width: 30%;
+  margin: 0px auto;
+  
+}
+.easy h5{
+ padding-top: 20px;
+ width: 50%;
+ margin: 0px auto;
+}
+ .fast h5{
+  padding-top: 20px;
+  width: 50%;
+  margin: 0px auto;
+ }
+
+/* -------End Benifits--------- */
+
+
+/* -------------Results ------------ */
+.polaris-results{
+  background-color: var(--Athens-Gray);
+  padding: 50px;
+  padding-top: 20px;
+}
+.polaris-results .polaris-results-header h1{
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 60px;
+}
+
+.result-card {
+  background-color: #ffffff00;
+}
+.result-card .score{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 0px auto;
+  border: 4px solid var(--Blue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.score h3{
+  font-weight: bold;
+}
+.result-card h4 {
+margin: 15px 0px;
+}
+.result-card p{
+  padding: 0px 0px 18px 0px;
+}
+
+.result-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* -------------End Results ------------ */
+
+
+/* -------Download ------  */
+.polaris-download{
+  background-color: var(--disabled);
+}
+.download-section .download-icon{
+  height: 16px;
+  margin: 0px 3px 4px;
+}
+/* ------------ End downlod ------- */
+
+/* --------------Secret ----------- */
+.polaris-secret{
+  padding: 60px;
+  background-color: var(--Athens-Gray);
+}
+.polaris-secret .polaris-secret-header h1{
+  width: 60%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 30px;
+}
+.secret-list {
+  list-style: none;
+  padding: 0 !important;
+  
+}
+.secret-list img{
+  height: 12px;
+  margin: 0px 7px 0px 0px;
+}
+
+.secret .secret-list li{
+  color: var(--Blue-color);
+  font-weight: 500;
+  /* margin-bottom: 2px; */
+  margin: 0px 0px 0px 0px;
+}
+.secret .person-name{
+  color: var(--Blue-color);
+}
+.secret .tag-name{
+color: var(--Yellow-color);
+}
+/* --------end secret --------- */
+
+
+
+/* -------Need to know -----  */
+.polaris-need-to-now{
+  background-color: var(--disabled);
+  padding: 50px;
+  padding-top: 20px;
+
+}
+.polaris-need-to-now .polaris-need-to-now-header h1{
+  width: 40%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 60px;
+}
+
+.need-to-now-card {
+  background-color: var(--Blue-color);
+  color: white;
+  padding: 48px;
+  border-radius: 8px;
+  min-height: 351px;
+  
+}
+.need-to-now-card .score{
+  border-radius: 50%;
+  margin: 0px auto;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.score h3{
+  font-weight: bold;
+}
+.need-to-now-card h4 {
+  margin: 31px 0px;
+  font-weight: 400;
+}
+.need-to-now-card p{
+  margin-bottom: 0px !important;
+  margin-top: 31px;
+}
+
+.expenses, .cash-flow{
+  background-color: var(--Yellow-color);
+}
+/* -------End Need to know -----  */
+
+/* ----------Comparsion ---------- */
+.comparison-header{
+  background: var(--Blue-color) !important;
+  padding: 20px;
+  color: var(--disabled);
+}
+
+
+.comparison{
+  background-color: var(--Athens-Gray);
+  padding: 20px;
+}
+.comparison img{
+  text-align: center;
+}
+/* ----------End Comparsion ---------- */
+
+
+/* -------------Contact form ---------  */
+.form-control{
+  background-color: #F4F4F4 !important;
+  border: none !important;
+}
+/* -------------End Contact form ---------  */
+
+
+
+
+
+/* --------------- */
+
+.footer{
+  background-color: var(--disabled);
+}
+.sub-footer{
+  background-color: var(--disabled);
+}
+.copyright{
+  color: var(--Balck-basic);
+}
+.sub-footer .nav-link{
+  color: var(--Primary-c) !important;
+}
+.sub-footer .nav-link:hover{
+  color: var(--Secondary) !important;
+}
+.Subscribe{
+  background-color: var(--Primary-c) !important;
+}
+.heart{
+  color: var(--Primary-c);
+}
+.text-light{
+  color: var(--Balck-basic);
+}
+
+.footer p{
+  color: var(--Balck-basic) !important;
+}
+address{
+  color: var(--Black-basic) !important;
+}
+.getintouch a{
+  color: var(--Black-basic) !important;
+}
+
+.getintouch a:hover{
+  color: var(--Primary-c) !important;
+}
+.list-unstyled li a{
+  color: var(--Black-basic) !important;
+}
+
+.list-unstyled li a:hover{
+  color: var(--Yellow-color) !important;
+}
+
+.location-dropdown {
+  background-color: var(--Primary-c) !important; 
+}
+
+.nav .nav-item{
+  background-color: #F4F4F4ca;
+  border-radius: 8px;
+  padding: 3px;
+  margin: 2px;
+}
+
+.privacy .nav-item{
+  background-color: #ff000000 !important;
+}
+
+.nav .nav-item svg{
+  color: var(--Blue-color);
+}
+
+
+
+
+
+
+/* responsive  */
+.nav-download-icons-mobile{
+  display: none;
+}
+/* For extremely small screen devices (595px and below) */
+ @media only screen and (max-width: 595px) {
+.nav-download-icons{
+display: none !important;
+}
+.nav-download-icons-mobile{
+  display: block;
+}
+
+}
+
+ 
+
+/* @media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      font-size: 8px !important;
+      margin: 0px;
+  }
+} */
+
+@media only screen and (min-width: 600px) and (max-width: 1368px) {
+  .nav-item{
+    font-size: 0.8rem;
+    margin: 0px;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  
+ 
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+
+}
