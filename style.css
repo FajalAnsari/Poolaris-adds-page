@@ -436,6 +436,17 @@ color: var(--Yellow-color);
   margin-left: auto ;
   width: 75% ;
 }
+.form-select{
+  background-color: #f4f4f4 !important;
+  padding: .665rem 2.25rem .375rem .75rem !important;
+  border: none !important;
+}
+.form-select:focus{
+  box-shadow: 0 0 0 .15rem rgb(255 193 7) !important;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 .15rem rgb(255 193 7)  !important;
+}
 /* -------------End Contact form ---------  */
 
 

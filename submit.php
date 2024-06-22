@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
 
   // email recipient
-  $to = 'fajal@polariserp.com';
+  $to = 'sales@polariserp.com';
 
   $subject = 'Polaris ERP Inquiry - ' . $name;
   $message = "Name: $name\n";
@@ -29,4 +29,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
   echo 'Invalid request.';
 }
+
+
+
+
+
 ?>
