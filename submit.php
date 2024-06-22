@@ -4,7 +4,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
   $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
   $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-  $countyCode = filter_var($_POST['countryCode'], FILTER_SANITIZE_STRING);
 
   // email recipient
   $to = 'fajal@polariserp.com';
