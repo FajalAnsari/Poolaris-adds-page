@@ -15,6 +15,21 @@ videoThumbnail.addEventListener("click", () => {
 });
 // ------- Youtube video hero section  end -----------
 
+// ------- Youtube video hero section  end desktop -----------
+const videoContainerDesktop = document.querySelector(".video-container-desktop");
+const videoThumbnailDesktop = document.querySelector(".video-thumbnail-desktop");
+const videoIframeDesktop = document.querySelector(".video-container-desktop iframe");
+
+videoThumbnailDesktop.addEventListener("click", () => {
+  // iframe's src empty string
+  videoIframeDesktop.src = "";
+
+  //  YouTubeURL with autoplay enabled
+  videoIframeDesktop.src = "https://www.youtube.com/embed/gcLKkZEWXwU?autoplay=1";
+  videoIframeDesktop.style.display = "";
+  videoThumbnailDesktop.style.display = "none"; //hiding thumnail after play
+});
+
 //------- Form Validation --------
 
 

@@ -127,13 +127,14 @@ padding: 10px;
 }
 .nav-item .nav-link {
   font-size: 18px;
+  color: black;
 }
 /* End navbar  */
 
 /* -----------------Hero section---------------------------------------- */
 .polaris-hero{
   padding-top: 120px;
-  background-color: var(--Athens-Gray);
+  background-color: var(--disabled);
 }
 
 .polaris-hero-header h1{
@@ -150,7 +151,7 @@ padding: 10px;
 /* ------------Track Your Business Finance --------  */
 .polaris-track{
   padding: 60px;
-  background-color: var(--disabled);
+  background-color: var(--Athens-Gray);
 }
 .polaris-track .polaris-track-header h1{
   width: 100%;
@@ -185,8 +186,8 @@ padding: 10px;
   padding: 2rem 0;
 }
 .process {
-  padding: 0.5rem 0px;
-  background-color: var(--Athens-Gray);
+  /* padding: 0.5rem 0px; */
+  background-color: #e5e5ea5c;
 }
 .process h5{
   color: var(--Blue-color);
@@ -450,6 +451,20 @@ color: var(--Yellow-color);
 /* -------------End Contact form ---------  */
 
 
+/* -------------Hero Contact form ---------  */
+.hero-form-container .contact-form{
+  width: 100%;
+}
+.hero-form-container .contact-form{
+  padding: 0px;
+}
+.hero-form-container #countryCode{
+  padding-right: 2rem !important;  
+
+}
+/* -------------End Hero Contact form ---------  */
+
+
 
 
 
@@ -520,7 +535,10 @@ address{
   color: var(--Blue-color);
 }
 
-
+.video-container-desktop iframe{
+  width: 100%;
+    height: 358px;
+}
 
 
  @media (max-width: 1200px) {
@@ -529,16 +547,33 @@ address{
     }
 }
 
-/* responsive  */
 .nav-download-icons-mobile{
   display: none;
 }
+
+
+
+/* hide  */
+
+
+/* responsive  */
 /* For extremely small screen devices (595px and below) */
  @media only screen and (max-width: 595px) {
+
+  /* hide  */
 .nav-book-a-demo-mobile{
   display: block !important;
 }
-  
+
+.polaris-hero{
+  display: block !important;
+}
+
+.polaris-hero2{
+  display: none !important;
+}
+  /* end hide  */
+
 .video-container iframe{
   width: 382px;
   height: 215px;

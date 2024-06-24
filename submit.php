@@ -4,13 +4,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
   $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
   $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+  $bussiness = filter_var($_POST['bussiness'], FILTER_SANITIZE_STRING);
 
   // email recipient
-  $to = 'sales@polariserp.com';
+  $to = 'fajal@polariserp.com';
 
   $subject = 'Polaris ERP Inquiry - ' . $name;
   $message = "Name: $name\n";
   $message .= "Email: $email\n";
+  $message .= "bussiness: $bussiness\n";
   $message .= (empty($phone)) ? '' : "Phone: $phone\n";
 
   $headers = 'From: Polaris Website <no-reply@polariserp.com>' . "\r\n" .
