@@ -16,6 +16,10 @@
     --Mercury  : #E6E6E6;
 
 }
+.w-82{
+  width: 82%;
+  margin: 0px auto;
+}
 button{
   border: none;
 }
@@ -25,6 +29,7 @@ button{
 .navbar-toggler{
   border: none !important;
 }
+
 .navbar-toggler:focus{
   /* display: inline-block;
     width: 1.5em;
@@ -151,7 +156,7 @@ padding: 10px;
 /* ------------Track Your Business Finance --------  */
 .polaris-track{
   padding: 60px;
-  background-color: var(--Athens-Gray);
+  background-color: var(--disabled);
 }
 .polaris-track .polaris-track-header h1{
   width: 100%;
@@ -178,6 +183,13 @@ padding: 10px;
   float: inline-end;
   margin-right: 15px;
 }
+.track-left .fast p{
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.track-left .fast img{
+  height: 40px;
+}
 /* ------------End Track Your Business Finance --------  */
 
 
@@ -202,6 +214,7 @@ padding: 10px;
 
 }
 
+
 .wide h5{
   padding-top: 20px;
   width: 30%;
@@ -221,6 +234,229 @@ padding: 10px;
 
 /* -------End Benifits--------- */
 
+/* Trusted  */
+.tursted {
+  background-color: var(--Athens-Gray);
+  padding: 2rem 0;
+}
+.trusted h5{
+  padding-top: 20px;
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 0px auto;
+  color: var(--Blue-color);
+  
+}
+.helping h5{
+  padding-top: 20px;
+  width: 80%;
+  margin: 0px auto;
+    color: var(--Blue-color);
+}
+.smart h5{
+  padding-top: 20px;
+  width: 80%;
+  margin: 0px auto;
+    color: var(--Blue-color);
+}
+/* ------ End Trusted ---------   */
+
+/* ------- Client-logo --------- */
+/* .client-logo-container{
+  background-color: var(--Athens-Gray);
+  display: flex;
+  flex-wrap: wrap; */
+  /* overflow-x: scroll;
+  scrollbar-width: none; */
+/* } */
+
+
+
+
+.Ourclients{
+  background-color: var(--disabled);
+}
+.Ourclients h2{
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+
+}
+:root {
+  --logo-max-width: 120px;
+  --logo-max-height: 60px;
+}
+
+.logogrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(var(--logo-max-width) * 1.25), 1fr));
+  grid-auto-rows: calc(var(--logo-max-height) * 1.25);
+  grid-gap: 4rem;
+}
+
+.logogrid__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logogrid__img {
+  object-fit: cover;
+  max-width: var(--logo-max-width);
+  max-height: var(--logo-max-height);
+  filter: grayscale(0) contrast(100%);
+  transition: filter 0.3s ease;
+
+}
+
+.logogrid__img:hover {
+  /* filter: grayscale(100%) contrast(25%); */
+  transform: scale(1.5); /* Adjust the scale value as needed */
+}
+
+/* DEMO STYLES */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.modile-hide{
+  display: none;
+}
+
+
+/* -------End client-logo --------- */
+
+/* -------- testimonial video -------  */
+.testimonial-video-header h2{
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 20px;
+  padding-top: 56px;
+}
+.testimonial-video-header img{
+  height: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(9%) saturate(6522%) hue-rotate(193deg) brightness(93%) contrast(96%);
+}
+.carousel-control-prev-icon {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(9%) saturate(6522%) hue-rotate(193deg) brightness(93%) contrast(96%);
+}
+.testimonial-video{
+  background-color: var(--disabled);
+}
+
+.testimonial-img-container img{
+  height: 320px;
+  float: right;
+  margin-right: 20px;
+
+}
+
+.testimonial-video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #f8f9fa; */
+}
+.testimonial-card {
+  position: relative;
+  padding: 50px;
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 10PX;
+}
+
+.testimonial-card .play-button {
+  position: absolute;
+  top: 72%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  background-color: #274188;
+  border: none;
+  border-radius: 50%;
+  /* width: 100%; */
+  /* height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffc107;
+}
+.testimonial-card .Arici{
+  top: 66% !important;
+}
+.testimonial-card .play-button i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.play-button img{
+  height: 50px;
+}
+.testimonial-card .testimonial-qoute{
+  width: 80%;
+  margin: 26px auto 25px auto;
+}
+
+.play-button-aric{
+  top: 66% !important;
+}
+
+
+/* -------- end testimonial video -------  */
+
+/* studuies --- */
+.studeis h4{
+  font-size: 34px;
+font-weight: bold;
+color: var(--Blue-color);
+margin: 23px 0px ;
+}
+.polaris-studeis{
+  background-color: #f8f9fa;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.polaris-studeis h2{
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.polaris-studeis img{
+  width: 130px;
+}
+
+/* studeis end  */
+
+
+
+.client-logo-container img{
+  width: 75%;
+}
+.client-logo-container .smart{
+  min-width: 40px;
+}
+
 /* -------how --------- */
 .how-left{
   margin-top: 3rem;
@@ -228,6 +464,9 @@ padding: 10px;
 }
 .how-left h2{
   color: var(--Blue-color);
+}
+.polaris-how {
+  background-color: var(--Athens-Gray);
 }
 /* -------End how --------- */
 
@@ -238,6 +477,7 @@ padding: 10px;
   background-color: var(--Athens-Gray);
   padding: 50px;
   padding-top: 20px;
+  padding-bottom: 12px;
 }
 .polaris-results .polaris-results-header h1{
   width: 100%;
@@ -277,13 +517,24 @@ padding: 10px;
 margin: 15px 0px;
 }
 .result-card p{
-  padding: 0px 0px 18px 0px;
+  padding: 0px 0px 7px 0px;
 }
 
 .result-image {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+.result-text-with-bg{
+  background-color: #ffc107;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: 500;
+  width: 250px;
+  display: block;
+  margin: 0px auto;
+  color: #274188;
+  cursor: default;
 }
 
 /* -------------End Results ------------ */
@@ -301,8 +552,26 @@ margin: 15px 0px;
 
 /* --------------Secret ----------- */
 .polaris-secret{
-  padding: 60px;
+  padding: 30px;
   background-color: var(--Athens-Gray);
+}
+.polaris-secret .secret-right img{
+  /* height: auto;
+    width: 434px;
+    float: right;
+    margin-right: 34px;
+    margin-top: 43px; */
+
+    /* height: auto;
+    width: 280px;
+    float: right;
+    margin-right: 34px;
+    margin-top: 43px; */
+
+    height: auto;
+    width: 244px;
+    margin-top: 59px;
+    margin-left: 80px;
 }
 .polaris-secret .polaris-secret-header h1{
   width: 60%;
@@ -318,7 +587,7 @@ margin: 15px 0px;
   margin: 0px auto;
   font-weight: bold;
   letter-spacing: -1.35px;
-  padding-bottom: 30px;
+  padding-top: 10px;
 }
 .secret-list {
   list-style: none;
@@ -336,10 +605,11 @@ margin: 15px 0px;
   /* margin-bottom: 2px; */
   margin: 0px 0px 0px 0px;
 }
-.secret .person-name{
+.person-name{
   color: var(--Blue-color);
+  margin-left: 80px;
 }
-.secret .tag-name{
+.tag-name{
 color: var(--Yellow-color);
 }
 .secret {
@@ -366,7 +636,7 @@ color: var(--Yellow-color);
   padding-bottom: 60px;
 }
 .polaris-need-to-now .polaris-need-to-now-header h2{
-  width: 40%;
+  width: 46%;
   text-align: center;
   margin: 0px auto;
   font-weight: bold;
@@ -419,6 +689,10 @@ color: var(--Yellow-color);
   background-color: var(--Athens-Gray);
   padding: 20px;
 }
+
+
+
+
 .comparison img{
   text-align: center;
   max-height: 18px;
@@ -592,6 +866,7 @@ display: none !important;
 }
 .polaris-track .track-left h2{
   width: 100%;
+  margin-top: 20px;
 }
 .yellow-underline {
   text-decoration-thickness: 4px;
@@ -604,7 +879,7 @@ display: none !important;
   padding-bottom: 22px;
 }
 .polaris-track{
-  padding: 42px;
+  padding: 11px;
 }
 .wide, .easy, .fast{
   padding: 18px 0px;
@@ -679,6 +954,26 @@ display: none !important;
 .footer-section{
   text-align: center;
 }
+ol, ul{
+  padding-left: 0rem !important;
+}
+.polaris-secret .secret-right img{
+  margin-right: 0px;
+     margin-top: 0px;
+}
+.testimonial-content-container p{
+  display: none;
+
+}
+.testimonial-img-container img{
+  height: 100% !important; 
+  float: right;
+  margin: 0px auto;
+}
+.testimonial-card .play-button{
+  top: 50% !important;
+    left: 52% !important;
+}
 
 }
 .nav{
@@ -704,6 +999,7 @@ display: none !important;
 .fast h5{
   width: 66%;
 }
+
 
 
 /* .navbar-nav .nav-item{
@@ -742,6 +1038,20 @@ display: none !important;
 }
 
 /* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 880px) and (max-width: 1600px) {
+  .play-button-aric{
+    top: 70% !important;
+  }
+  .play-button-amjad{
+    top: 75% !important;
+  }
+  .play-button-salem{
+    top: 82% !important;
+  }
+}
+
+
+
+@media only screen and (min-width: 1566px) {
 
 }

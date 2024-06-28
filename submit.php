@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $bussiness = filter_var($_POST['bussiness'], FILTER_SANITIZE_STRING);
 
   // email recipient
-  $to = 'fajal@polariserp.com';
+  $to = 'sales@polariserp.com';
 
   $subject = 'Polaris ERP Inquiry - ' . $name;
   $message = "Name: $name\n";

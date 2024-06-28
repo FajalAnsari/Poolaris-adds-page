@@ -33,11 +33,6 @@ videoThumbnailDesktop.addEventListener("click", () => {
 //------- Form Validation --------
 
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
   const name = document.getElementById('name');
@@ -82,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Restrict digits in name field and validate
   name.addEventListener('input', function () {
     this.value = this.value.replace(/\d/g, '');
-    if (this.value.trim() === '') {
+    if (this.value.trim() === '' && name.value !== '') {
       name.classList.add('is-invalid');
       document.getElementById('nameError').style.display = 'block';
     } else {
@@ -129,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isValid = true;
 
     // Final validation before submitting
-    if (name.value.trim() === '') {
+    if (name.value.trim() !== '' && name.value.trim() === '') {
       name.classList.add('is-invalid');
       document.getElementById('nameError').style.display = 'block';
       isValid = false;
@@ -160,3 +155,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //------- Form Validation  end --------
+
+
+// video testimonial 
+document.addEventListener('DOMContentLoaded', function() {
+  const testimonialModal = document.getElementById('testimonialModal');
+  const testimonialVideo = document.getElementById('testimonialVideo');
+  const playButtons = document.querySelectorAll('.play-button');
+
+  playButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const videoUrl = this.getAttribute('data-video');
+      testimonialVideo.src = videoUrl;
+    });
+  });
+
+  testimonialModal.addEventListener('hidden.bs.modal', function() {
+    testimonialVideo.src = '';
+  });
+});
