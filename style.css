@@ -138,7 +138,7 @@ padding: 10px;
 
 /* -----------------Hero section---------------------------------------- */
 .polaris-hero{
-  padding-top: 120px;
+  padding: 140px 0px 40px;
   background-color: var(--disabled);
 }
 
@@ -155,7 +155,7 @@ padding: 10px;
 
 /* ------------Track Your Business Finance --------  */
 .polaris-track{
-  padding: 60px;
+  padding: 40px 0px;
   background-color: var(--disabled);
 }
 .polaris-track .polaris-track-header h1{
@@ -237,7 +237,7 @@ padding: 10px;
 /* Trusted  */
 .tursted {
   background-color: var(--Athens-Gray);
-  padding: 2rem 0;
+  padding: 40px 0px;
 }
 .trusted h5{
   padding-top: 20px;
@@ -275,6 +275,7 @@ padding: 10px;
 
 .Ourclients{
   background-color: var(--disabled);
+  padding: 40px 0px;
 }
 .Ourclients h2{
   width: 100%;
@@ -282,8 +283,8 @@ padding: 10px;
   margin: 0px auto;
   font-weight: bold;
   letter-spacing: -1.35px;
-  padding-bottom: 30px;
-  margin-top: 20px;
+  padding-bottom: 60px;
+
 
 }
 :root {
@@ -340,8 +341,8 @@ padding: 10px;
   margin: 0px auto;
   font-weight: bold;
   letter-spacing: -1.35px;
-  padding-bottom: 20px;
-  padding-top: 56px;
+  padding-bottom: 30px;
+
 }
 .testimonial-video-header img{
   height: 2.2rem;
@@ -356,6 +357,7 @@ padding: 10px;
 }
 .testimonial-video{
   background-color: var(--disabled);
+  padding: 40px 0px;
 }
 
 .testimonial-img-container img{
@@ -374,9 +376,9 @@ padding: 10px;
 }
 .testimonial-card {
   position: relative;
-  padding: 50px;
+  /* padding: 50px; */
   /* background-color: #fff; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;
   text-align: center;
   padding-top: 10PX;
@@ -385,7 +387,7 @@ padding: 10px;
 .testimonial-card .play-button {
   position: absolute;
   top: 72%;
-  left: 66%;
+  left: 67%;
   transform: translate(-50%, -50%);
   background-color: #274188;
   border: none;
@@ -422,15 +424,14 @@ padding: 10px;
 
 /* studuies --- */
 .studeis h4{
-  font-size: 34px;
+  /* font-size: 34px; */
 font-weight: bold;
 color: var(--Blue-color);
 margin: 23px 0px ;
 }
 .polaris-studeis{
   background-color: #f8f9fa;
-  padding: 50px;
-  padding-top: 20px;
+  padding: 40px 0px;
 }
 
 .polaris-studeis h2{
@@ -440,7 +441,7 @@ margin: 23px 0px ;
   font-weight: bold;
   letter-spacing: -1.35px;
   padding-bottom: 30px;
-  padding-top: 10px;
+
 }
 .polaris-studeis img{
   width: 130px;
@@ -475,9 +476,7 @@ margin: 23px 0px ;
 /* -------------Results ------------ */
 .polaris-results{
   background-color: var(--Athens-Gray);
-  padding: 50px;
-  padding-top: 20px;
-  padding-bottom: 12px;
+padding: 40px 0px;
 }
 .polaris-results .polaris-results-header h1{
   width: 100%;
@@ -552,7 +551,7 @@ margin: 15px 0px;
 
 /* --------------Secret ----------- */
 .polaris-secret{
-  padding: 30px;
+  padding: 40px 0px;
   background-color: var(--Athens-Gray);
 }
 .polaris-secret .secret-right img{
@@ -587,7 +586,7 @@ margin: 15px 0px;
   margin: 0px auto;
   font-weight: bold;
   letter-spacing: -1.35px;
-  padding-top: 10px;
+  /* padding-bottom: 60px; */
 }
 .secret-list {
   list-style: none;
@@ -620,11 +619,13 @@ color: var(--Yellow-color);
 
 
 
+
+
 /* -------Need to know -----  */
 .polaris-need-to-now{
+
   background-color: var(--disabled);
-  padding: 50px;
-  padding-top: 20px;
+  padding: 40px 0px 40px 0px;
 
 }
 .polaris-need-to-now .polaris-need-to-now-header h1{
@@ -642,6 +643,7 @@ color: var(--Yellow-color);
   font-weight: bold;
   letter-spacing: -1.35px;
   padding-bottom: 60px;
+
 }
 .need-to-now-card {
   background-color: var(--Blue-color);
@@ -673,11 +675,39 @@ color: var(--Yellow-color);
 }
 
 .expenses, .cash-flow{
-  background-color: var(--Yellow-color);
+  background-color: #e2dede;
+}
+.expenses ,.cash-flow h4{
+  color: var(--Blue-color) !important;
+}
+.cash-flow p{
+  color: var(--Blue-color) !important;
 }
 /* -------End Need to know -----  */
 
 /* ----------Comparsion ---------- */
+.polaris-comparision{
+  padding: 40px 0px;
+}
+.need-to-now-section .polaris-need-to-now-header h1{
+  width: 40%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 60px;
+}
+.need-to-now-section .polaris-need-to-now-header h2{
+  width: 46%;
+  text-align: center;
+  margin: 0px auto;
+  font-weight: bold;
+  letter-spacing: -1.35px;
+  padding-bottom: 60px;
+
+}
+
+
 .comparison-header{
   background: var(--Blue-color) !important;
   padding: 20px;
@@ -738,6 +768,12 @@ color: var(--Yellow-color);
 }
 /* -------------End Hero Contact form ---------  */
 
+/* -------- contact form bottom --------  */
+
+.contact-form-section-bottom {
+  padding: 0px 10rem;
+}
+/* ------  End contact form bottom -----------  */
 
 
 
@@ -879,7 +915,7 @@ display: none !important;
   padding-bottom: 22px;
 }
 .polaris-track{
-  padding: 11px;
+  padding: 30px 0px ;
 }
 .wide, .easy, .fast{
   padding: 18px 0px;
@@ -891,15 +927,17 @@ display: none !important;
   padding: 0.1rem 0px;
 }
 .how-left{
-  padding: 2rem;
+  padding: 0rem;
   padding: 0;
 }
 .how-right{
   padding-bottom: 2rem;
 }
+.how-cta{
+  display: none;
+}
 .polaris-results{
-  padding-top: 0.1rem;
-  padding-bottom: 0px;
+        padding: 30px 0px;
 }
 .polaris-results .polaris-results-header h2{
   padding-bottom: 30px;
@@ -966,13 +1004,17 @@ ol, ul{
 
 }
 .testimonial-img-container img{
-  height: 100% !important; 
-  float: right;
-  margin: 0px auto;
+  height: 100%;
+  float: none;
+  margin: 0px;
+  margin-right: 0px;
 }
 .testimonial-card .play-button{
   top: 50% !important;
     left: 52% !important;
+}
+.contact-form-section-bottom {
+  padding: 0px;
 }
 
 }
